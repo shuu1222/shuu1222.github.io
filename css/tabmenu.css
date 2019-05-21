@@ -1,0 +1,58 @@
+.tabcs{
+  font-size: 14px;
+}
+
+.container{
+margin: 30px auto;
+  width: 500px;
+  min-height: 150px;
+  padding: 12px;
+	 background-color: rgba(255,255,255,0.3);
+	 border-radius:15px;
+}
+
+.menu{
+  list-style: none;;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu li a{
+  display: inline-block;
+  width: 150px;
+  height: 20px;
+  text-align: center;
+  padding: 8px 0;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px 5px 0 0;
+  font-weight: bold;
+}
+
+
+.menu li a.active{
+
+color: black;
+font-weight: bold;
+ background-color: rgba(255,255,255,0.5);
+}
+
+.menu li a:not(.active):hover{
+opacity: 0.7;
+font-size: 16px;
+color: #4b0082;
+transition: 1s;
+}
+
+.content.active{
+color: black;
+ background-color: rgba(255,255,255,0.7);
+
+border-radius: 3px 5px 5px 5px;
+padding: 8px 8px;
+display: block;
+}
+.content{
+display: none;
+}
