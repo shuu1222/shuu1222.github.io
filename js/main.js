@@ -60,6 +60,6 @@ window.location.href="image.html"
 });
 
 
-
+});
 
 }
