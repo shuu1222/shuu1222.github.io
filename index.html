@@ -1,106 +1,218 @@
 <!DOCTYPE html>
-<html lang=ja >
+
+<html lang="ja">
+    
   <head>
+      
     <meta charset="utf-8">
-    <title>未経験からのプログラミング</title>
-    <link rel="stylesheet" href="css/styles.css" >
-    <link rel="stylesheet" href="css/tabmenu.css">
-
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> <!--  互換性について-->
+<!--  bootstrap導入用リンク　-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+<!--      font awsome追加-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      
+      <style>
+      
+          .jumbotron {
+              
+              background-image: url(shot/32.jpg);
+              text-align: center;
+              margin-top: 40px;
+          }
+          
+          #email {  
+              width: 400px;
+          }
+          
+          
+          #aboutThisPage {    
+              text-align: center;
+              margin-top:50px;
+              margin-bottom: 50px;
+              
+          }
+          
+          .card-img-top {
+              
+              width: 100%;
+              
+          }
+          
+          #craftBeerPage {
+              
+              width: 200px;
+              
+          }
+          
+          #footer {
+              padding-top: 150px;
+              margin-top: 50px;
+              text-align: center;
+              padding-bottom: 150px;
+              background-size: cover;
+          }
+          .footerimage{
+              background-image: url(shot/45.JPG); z-index: 0;
+          }
+          .footermask{
+              height: 100%;
+              background: rgba(255,255,255,0.5);
+              padding: 50px;
+          }
+          
+          #haikei{
+              background-color: rgba(255,255,255,0.3);
+              border: rgba(0,0,0,0) 1px solid;
+              border-radius: 10px;
+              color: black;
+              width: 40%;
+              font-weight: bold;
+              margin: auto
+          }
+          
+          #beerPic{
+              width: 10%;
+              height: 10%;
+          }
+          
+          body {
+              
+              position: relative;
+              
+          }
+      
+      </style>
+      <tytle>Shu's portfolio</tytle>
   </head>
-  <body>
-  <div id="haikei">
-<h1>未経験からのプログラミング</h1>
+<!--    data-spy scrollでスクロールを検知,navbarのスタイルが変わります-->
+  <body data-spy="scroll" data-target="#navbar" data-offset="150">
+      
+        <nav class="navbar navbar-light bg-faded navbar-fixed-top" id="navbar">
+          <a class="navbar-brand" href="#">Shu's Work</a>
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#jumbotron">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Share your CraftBeer</a>
+            </li>
+          </ul>
+          <form class="form-inline pull-xs-right">
+            <input class="form-control" type="email" placeholder="Email">
+              <input class="form-control" type="password" placeholder="Password">
+            <button class="btn btn-success" type="submit">Login</button>
+          </form>
+        </nav>
 
-<section class="tabcs">
+        <div class="jumbotron" id="jumbotron">
+          <h1 class="display-3">Shu's Work</h1>
+          <hr class="m-y-2">
+          <p class="list-group-item list-group-item-info" id="haikei">メールアドレスを登録して職務経歴書をダウンロード</p>
 
-<div class="container">
-  <ul class="menu">
-    <li><a href="#" class="active" data-id="about">サイトの概要</a></li>
-    <li><a href="#" data-id="me">コンテンツについて</a></li>
-    <li><a href="#" data-id="contact">コンタクト</a></li>
-  </ul>
-
-  <section class="content" id="about">
-	このサイトは未経験からウェブプログラマを目指す管理人の
-	成長を記録するために作成したページです
-	学習サイトのチュートリアル等を利用して作成した成果物を配置します
-	おまけで趣味の成果物も配置予定です
-
-
-
-  </section>
-
-  <section class="content" id="me">
-	このサイトには今まで制作してきたものや撮影した写真を設置します。
-	このサイトで公開している制作物に関しては一言連絡を頂けましたら<br>
-	配布いたしますので自由に御使用いただいて構いません。
-  </section>
-
-  <section class="content" id="contact">
-	<a href="https://forms.gle/vZbbvGaRv8aZ72Ax7">こちら</a>までお願いします。
-  </section>
-
-
-</div>
-
-<div id="open">このページについて</div>
-<div id ="mask" class="hidden"></div>
-
-<section id="hideAll">
-
-    <section id="modal" class="hidden">
-    <p>プログラミング学習の成果を残すためのページです。<br>このページはドットインストールの<br>JavaScript チュートリアルをベースに作成しています。</p>
-    <div id="close">
-      閉じる
-    </div>
-    </section>
-
-
-
-
-
-<div id="typing">タイピングゲーム</div>
-<script src="js/main.js"></script>
-
-  <section id="modal2" class="hidden">
-  タイピングが難しいとされている単語のタイピングゲームに移動します。<br>
-  ドットインストールのチュートリアルをベースに作成しています。
-  <div id="goToType">
-    タイピングゲームへ移動
-  </div>
-  </section>
-
-
-  <div id="modeling">3Dモデル</div>
-<script src="js/main.js"></script>
-
-  <section id="modal3" class="hidden">
-  <p>フルスクラッチで作成した3Dモデルを設置してあります。　自作ゲーム等に使用したい場合ご連絡を頂けましたらFBXにてお渡しいたします。</p>
-  <div id="goToModel">
-    <a href="models/models.html"  style="color:black; text-decoration:none">  3Dモデル置き場へ移動</a>
-  </div>
-  </section>
-
-    </div>
-
-    <div id="photo">フォトアルバム</div>
-
-    <section id="modal4" class="hidden">
-    <p>撮影した写真のページです。</p>
-    <p>写真はLazySizesで遅延ロードされます。 </p>
-
-    <div id="goToPhoto">
-    <a src="image.html"  style="color:black; text-decoration:none"> フォトアルバムへ</a>
-    </div>
-    </section>
-
+        <form class="form-inline">
+          <div class="form-group">
+            <label class="sr-only" for="email">Email address</label>
+            <div class="input-group">
+              <input type="email" class="form-control" id="email" placeholder="Your email">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign up to get Resume</button>
+        </form>
+        </div>
+      
+      <div class="container">
+      
+        <div class="row" id="aboutThisPage">
+          
+            <h1>What is this page?</h1>
+            <p class="lead">Portfolio of Shuhei Wada</p>
+            <p class="lead">Programing, Design, 3D modeling, Photos</p>
+          </div>
+          
       </div>
-</section>
-<script src="js/main.js">  </script>
-<script src="js/main2.js"></script>
-<script src="js/tabmenu.js"></script>
-
-</body>
+      
+      <div class="container" id="about">
+      <div class="card-deck-wrapper">
+  <div class="card-deck">
+    <div class="card">
+     <a href="https://shuu1222.github.io/index.html">
+        <img class="card-img-top" src="shot/firstport.png" alt="FirstPortfolio">
+     </a>
+      <div class="card-block">
+        <h4 class="card-title"><i class="fa fa-globe"></i> JavaScript Native Page</h4>
+        <p class="card-text">プログラミングを始めて1か月目で作成したページです。<br>
+            フレームワークに頼らずページの動きをJavaScriptで作成しています（フロントのみ）</p>
+          <p>ドットインストールなどのチュートリアル動画を見て作成しました。</p>
+        
+      </div>
+    </div>
+    <div class="card"　>
+        <a href="https://shuu1222.github.io/models/models.html">
+      <img class="card-img-top" src="shot/models.png" alt="FullScratched3Dmodels"> </a>
+      <div class="card-block"> 
+        <h4 class="card-title"><i class="fa fa-heart"></i> 3D Models</h4>
+        <p class="card-text">作成した3Dモデリングを展示しています。<br>使用ソフト<br>Blender<br>Modo<br>Photoshop<br>Clipstudio</p>
+        
+        
+      </div>
+    </div>
+    <div class="card">
+    <a href="https://shuu1222.github.io/models/models.html">  
+     <img class="card-img-top" src="shot/36.jpg" alt="My photo page">
+    </a>
+      <div class="card-block">
+        <h4 class="card-title"><i class="fa fa-camera"></i> Photos</h4>
+        <p class="card-text">ここでは撮影した写真を展示しています。<br>使用機材は<br>Sony a7Ⅱ　<br>SONY Sonnar T* FE 55mm F1.8 ZA<br>( SEL55F18Z)<br>
+          素材の使用は自由に行っていただいて構いませんが、公開する際はお声がけください。</p>
+       
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+      
+      <div id="footer" class="footerimage">
+          <div class="footermask">
+          
+        <div class="row">
+          
+                <h2>クラフトビール共有SNSへ移動（制作中）</h2>
+            <div class="container" >
+            <p class="lead" style="text-align: left">
+            お気に入りのクラフトビールを共有するSNS<br>
+            あなたのお気に入りを共有、ビールがつながっている店舗情報を入力して
+            お気に入りの銘柄をシェア！<br>
+            あなたの気になるビールが何処のバーで飲めるかチェックしましょう。<br>
+            
+            </p>
+            </div>
+            
+            <p><a href=""><img src="shot/beer.png" id="beerPic"></a></p>
+            
+            
+              </div>
+          
+          </div>
+      </div>
+<!--      uncaught error回避用スクリプト Tether 読み込み-->
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+      
+      <script type="text/javascript">
+      alert ("裏側の処理は現在制作中となっております。\nPHPを使用したログインフォームを作成予定です。");
+      </script>
+  </body>
+    
 </html>
+
+
+<!--
+ソースをご覧いただき有難うございます。
+このポートフォリオページはUdemy【【世界で30万人が受講】フルスタック・Webエンジニア講座（2017最新版）】セクション７Boostrap4を受講し作成しました。
+-->
