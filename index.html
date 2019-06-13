@@ -11,72 +11,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 <!--      font awsome追加-->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-      <style>
-
-          .jumbotron {
-
-              background-image: url(shot/32.jpg);
-              text-align: center;
-              margin-top: 40px;
-          }
-
-          #email {
-              width: 400px;
-          }
+<!-- CSSのリンク -->
+      <link rel="stylesheet" href="css/main.css" >
 
 
-          #aboutThisPage {
-              text-align: center;
-              margin-top:50px;
-              margin-bottom: 50px;
-
-          }
-
-          .card-img-top {
-
-              width: 100%;
-
-          }
-
-          #craftBeerPage {
-
-              width: 200px;
-
-          }
-
-          #footer {
-              padding-top: 150px;
-              margin-top: 50px;
-              text-align: center;
-              padding-bottom: 150px;
-              background-size: cover;
-          }
-          .footerimage{
-              background-image: url(shot/45.JPG); z-index: 0;
-          }
-          .footermask{
-              height: 100%;
-              background: rgba(255,255,255,0.5);
-              padding: 50px;
-          }
-
-          #haikei{
-              background-color: rgba(255,255,255,0.3);
-              border: rgba(0,0,0,0) 1px solid;
-              border-radius: 10px;
-              color: black;
-              width: 40%;
-              font-weight: bold;
-              margin: auto
-          }
-
-          #beerPic{
-              width: 10%;
-              height: 10%;
-          }
-
-      </style>
       <tytle>Shu's portfolio</tytle>;
 
       </head>
@@ -116,14 +54,17 @@
 
         <form class="form-inline">
           <div class="form-group">
-            <label class="sr-only" for="email">Email address</label>
+            <label class="sr-only" for="email" >Email address</label>
             <div class="input-group">
-              <input type="email" class="form-control" id="email" placeholder="Your email">
+              <input id="mailform" type="email" class="form-control" id="email" placeholder="Your email">
             </div>
           </div>
           <button type="submit" class="btn btn-primary">Sign up to get Resume</button>
         </form>
         </div>
+
+<button class="notifi"><p style="color: white; font-weight: bold;">現在バックグラウンド処理は準備中です。 <br>   PHPでログインフォームを作成予定です。</p></button>
+
 
       <div class="container">
 
@@ -140,13 +81,13 @@
       <div class="card-deck-wrapper">
   <div class="card-deck">
     <div class="card">
-     <a href="https://shuu1222.github.io/jspage.html">
+     <a href="jspage.html">
         <img class="card-img-top" src="shot/firstport.png" alt="FirstPortfolio">
      </a>
       <div class="card-block">
         <h4 class="card-title"><i class="fa fa-globe"></i> JavaScript Native Page</h4>
         <p class="card-text">プログラミングを始めて1か月目で作成したページです。<br>
-            フレームワークに頼らずページの動きをJavaScriptで作成しています（フロントのみ）</p>
+            ページの動きを<br>CSSアニメーション、JavaScriptを使用<br>インタラクティブなページを意識して作成しています</p>
           <p>ドットインストールなどのチュートリアル動画を見て作成しました。</p>
 
       </div>
@@ -209,20 +150,8 @@
 <!-- JQueryによるクッキー情報の使用 -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-<script type="text/javascript">
-$(function(){
-	//cokkieのaccessの値で判定
-	if($.cookie("access")){//accessの値がある場合
-	}else{//accessの値が無い場合
-    alert ("裏側の処理は現在制作中となっております。\nPHPを使用したログインフォームを作成予定です。");
-
-	}
-	$(window).load(function(){
-		//accessというキーで適当な値をcookieに保存。3日間有効
-		$.cookie("access","foo", { expires: 3 });
-	})
-});
-</script>
+<!-- JSの読み込み -->
+<!-- <script src="js/mainpage.js"></script> -->
 
 
   </body>

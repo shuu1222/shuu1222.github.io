@@ -1,0 +1,96 @@
+
+html{
+       scroll-behavior: smooth;
+    }
+
+    .jumbotron {
+
+        background-image: url(../shot/32.jpg);
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    #email {
+        width: 400px;
+    }
+
+
+    #aboutThisPage {
+        text-align: center;
+        margin-top:50px;
+        margin-bottom: 50px;
+
+    }
+
+    .card-img-top {
+
+        width: 100%;
+
+    }
+
+    #craftBeerPage {
+
+        width: 200px;
+
+    }
+
+    #footer {
+        padding-top: 150px;
+        margin-top: 50px;
+        text-align: center;
+        padding-bottom: 150px;
+        background-size: cover;
+    }
+    .footerimage{
+        background-image: url(../shot/45.JPG); z-index: 0;
+    }
+    .footermask{
+        height: 100%;
+        background: rgba(255,255,255,0.5);
+        padding: 50px;
+    }
+
+    #haikei{
+        background-color: rgba(255,255,255,0.3);
+        border: rgba(0,0,0,0) 1px solid;
+        border-radius: 10px;
+        color: black;
+        width: 40%;
+        font-weight: bold;
+        margin: auto
+    }
+
+    #beerPic{
+        width: 10%;
+        height: 10%;
+    }
+
+#mailform{
+  position: relative;
+  z-index: 1;
+}
+
+.notifi{
+  pointer-events: auto;
+  z-index: 10;
+  position: relative;
+  background: black;
+  opacity: 0.4;
+  width: 400px;
+  border-radius: 4px;
+  position: absolute;
+  top:120px;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  border-color: none;
+  margin: auto;
+  transition: 2s;
+  cursor: pointer;
+}
+
+
+.notifi:focus {
+transform: rotate(360deg);
+opacity:0;
+}

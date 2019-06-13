@@ -96,11 +96,11 @@ a:h1{
   padding: 20px;
   border-radius: 4px;
   position: absolute;
-  top:40px;
+  top:140px;
   left: 0;
   right: 0;
   margin: auto;
-  transition: 0.4s;
+  transition: 1s;
   z-index: 1;
 }
 #modal2, #modal3,#modal4{
@@ -109,11 +109,11 @@ a:h1{
   padding: 20px;
   border-radius: 4px;
   position: absolute;
-  top:40px;
+  top:140px;
   left: 0;
   right: 0;
   margin: auto;
-  transition: 0.4s;
+  transition: 1s;
   z-index: 1;
 }
 
@@ -123,21 +123,22 @@ a:h1{
 }
 #modal.hidden{
   /* display: none; */
-  transform: translate(0,-500px);
+  transform: translate(0,-500px) rotate(360deg);
+  opacity: 0;
 }
 
 #modal2.hidden{
   /* display: none; */
-  transform: translate(0,-500px);
+  transform: translate(0,-500px) rotate3d(10,10,10,360deg);
 }
 
 #modal3.hidden{
   /* display: none; */
-  transform: translate(0,-500px);
+  transform: translate(0,-500px) rotateY(660deg);
 }
 #modal4.hidden{
   /* display: none; */
-  transform: translate(0,-500px);
+  transform: translate(0,-800px) skew(40deg,60deg);
 }
 
 #hideAll{
