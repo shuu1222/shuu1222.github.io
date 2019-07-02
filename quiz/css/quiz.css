@@ -1,0 +1,102 @@
+body{
+  background: #efdec1;
+  font-size: 14px;
+  font-family: sans-serif;
+
+}
+
+.contianer{
+width: 400px;
+margin: 8px auto;
+background: white;
+border-radius: 4px;
+padding: 16px;
+position: relative;
+}
+
+
+#question{
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+#choices{
+list-style: none;
+padding: 0;
+margin-bottom: 16px;
+}
+
+#choices >li{
+border: 1px solid black;
+border-radius: 4px;
+padding: 10px;
+margin-bottom: 10px;
+cursor: pointer;
+}
+
+#choices > li:hover{
+  background: lightgray;
+}
+
+#btn, #result>a{
+  background: #3498db;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 0 mediumblue;
+}
+
+#btn.disabled{
+  background: gray;
+  box-shadow: 0 4px 0 darkgrey;
+  opacity: 0.7;
+}
+
+#choices>li.correct{
+  background: aquamarine;
+  border-color: chartreuse;
+  color: darkgreen;
+  font-weight: bold;
+}
+#choices>li.correct::after{
+   content: "...correct!";
+}
+
+#choices>li.wrong{
+  background: palevioletred;
+  border-color: orangered;
+  color: darkred;
+  font-weight: bold;
+}
+#choices>li.wrong::after{
+   content: "...wrong!";
+}
+#result{
+  position: absolute;
+  width: 300px;
+  background: white;
+  padding: 30px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  /* top: 50px; */
+  top: -500px;
+  right:0;
+  left: 0;
+  margin: 0 auto;
+  border-radius: 3px;
+  text-align: center;
+  transition: 0.4s ease-out;
+}
+#result.show{
+  top: 50px;
+}
+
+#result>p{
+  font-size: 24px;
+}
+
+#result>a{
+  display: block;
+  text-decoration: none;
+}

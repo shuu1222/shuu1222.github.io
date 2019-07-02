@@ -1,8 +1,31 @@
 
-
 h1{
 text-align: center;
 
+}
+
+html{
+       scroll-behavior: smooth;
+    }
+
+.card-img-top {
+
+    width: 100%;
+    opacity: 0.6;
+
+}
+
+.card-img-top:hover{
+  opacity: 1;
+  transition: 0.7s;
+}
+
+#about{
+  width:800px;
+}
+
+.card-title{
+  font-size: 18px;
 }
 
 body {
